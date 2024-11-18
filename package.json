@@ -1,0 +1,43 @@
+{
+  "name": "rtk-tag-tab-sync-mono",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "./rtk-tag-tab-sync",
+    "./rtk-tag-tab-sync-example-client",
+    "./rtk-tag-tab-sync-example-server"
+  ],
+  "scripts": {
+    "dev": "concurrently 'npm run dev:client' 'npm run dev:server'",
+    "dev:client": "npm run dev -w rtk-tag-tab-sync-example-client",
+    "dev:server": "npm run dev -w rtk-tag-tab-sync-example-server",
+    "build-verbose": "tsc --build --verbose",
+    "format": "prettier --write .",
+    "lint": "eslint .",
+    "test": "npm run test -w rtk-tag-tab-sync",
+    "clean": "npm run clean -ws",
+    "ci": "npm run check-format && npm run lint && npm run build-verbose && npm run test && npm run check-exports",
+    "check-exports": "npm run check-exports -w rtk-tag-tab-sync",
+    "check-format": "prettier --check .",
+    "check-dead-code": "ts-prune",
+    "check-updates": "npx npm-check-updates",
+    "check-links": "npm ls -g --depth=0 --link=true"
+  },
+  "dependencies": {
+    "globals": "^15.12.0",
+    "react": "^18.3.1",
+    "rtk-tag-tab-sync": "^1.0.0",
+    "typescript": "~5.6.2"
+  },
+  "devDependencies": {
+    "@eslint/compat": "^1.2.2",
+    "@types/node": "^18.11.9",
+    "@typescript-eslint/eslint-plugin": "^8.11.0",
+    "@typescript-eslint/parser": "^8.11.0",
+    "concurrently": "7.2.1",
+    "eslint": "^9.13.0",
+    "prettier": "^2.8.0",
+    "process": "^0.11.10",
+    "ts-node": "^10.9.1"
+  }
+}

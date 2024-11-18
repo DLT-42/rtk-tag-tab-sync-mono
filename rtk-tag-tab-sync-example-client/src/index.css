@@ -1,0 +1,99 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.main-container {
+  border: 1px solid #4a4a4a;
+  border-radius: 0.25rem;
+  width: 60vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vh;
+  padding: 2.5vh;
+}
+
+.message-container {
+  border: 1px solid #4a4a4a;
+  border-radius: 0.25rem;
+  background-color: #363636;
+  flex-grow: 1;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 0.25rem;
+  padding: 0.25rem;
+}
+
+.message {
+  box-sizing: content-box;
+  border: 1px solid #4a4a4a;
+  border-radius: 0.25rem;
+  background-color: #1a1a1a;
+  color: #dadada;
+  height: 1.25rem;
+  cursor: pointer;
+  font-size: 0.75rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0px 5px;
+  flex-shrink: 0;
+}
+
+.button {
+  box-sizing: content-box;
+  border: 1px solid #9c9c9c;
+  background-color: #6b6b6b;
+  color: #cecece;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  padding: 0px;
+  height: 1.25rem;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+.button:hover {
+  border-color: #b5b5b5;
+  color: #e2e2e2;
+}
+
+.field {
+  box-sizing: content-box;
+  border: 1px solid #4a4a4a;
+  border-radius: 0.25rem;
+  background-color: #1a1a1a;
+  height: 1.25rem;
+  font-size: 13px;
+  padding: 0px 5px;
+  flex-shrink: 0;
+}
+
+.field:focus-visible {
+  outline-color: #9c9c9c;
+}

@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "commonjs",
+    "incremental": true,
+    "declaration": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "paths": {
+      "rtk-tag-tab-sync": ["./rtk-tag-tab-sync/src"]
+    }
+  },
+  "files": ["./src/index.ts"],
+  "references": [
+    {
+      "path": "./rtk-tag-tab-sync"
+    },
+    {
+      "path": "./rtk-tag-tab-sync-example-client"
+    }
+  ]
+}
