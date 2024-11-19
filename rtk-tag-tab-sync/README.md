@@ -1,4 +1,3 @@
-
 <p align="center">
   <a href="https://www.npmjs.com/package/rtk-tag-tab-sync"><img alt="npm" src="https://img.shields.io/npm/v/rtk-tag-tab-sync?style=flat-square" /></a>
 </p>
