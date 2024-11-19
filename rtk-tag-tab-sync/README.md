@@ -1,3 +1,9 @@
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/rtk-tag-tab-sync"><img alt="npm" src="https://img.shields.io/npm/v/rtk-tag-tab-sync?style=flat-square" /></a>
+</p>
+<br/>
+
 # rtk-tag-tab-sync
 
 Cross tab RTK Query tag invalidation middleware for Redux Toolkit, and a utility (with an accompanying react hook) for cross tab communication.
