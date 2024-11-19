@@ -1,6 +1,6 @@
 {
   "name": "rtk-tag-tab-sync",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "license": "MIT",
   "description": "Utilities supporting cross tab tag invalidation for Redux Tooklit",
